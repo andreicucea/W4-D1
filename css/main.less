@@ -60,6 +60,8 @@ body {
 .col-11 {float: left; width: 91.66%;}
 .col-12 {float: left; width: 100%;}
 
+.col-9-1 {float:left; width: 74%}
+
 [class^="col-"],
 [class*=" col-"] {
   float: left;
@@ -86,6 +88,7 @@ body {
 
 @black: #1c1c1c;
 @grey: #7d7d7d;
+@green: #87BD65;
 
 .container {
   max-width: 1170px;
@@ -262,6 +265,18 @@ body {
 
 }
 
+.content {
+  background-image: url(../images/background2.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .centerItems {
+    align-items: flex-end;
+    display: flex;
+  }
+}
+
 .builds {
   background-color: @black;
   color: #fff;
@@ -363,4 +378,61 @@ body {
     letter-spacing: 1px;
 
   }
+
+  .arrowContainer {
+    margin: 14px 0 0;
+  }
+}
+
+.arrowLeft,
+.arrowRight {
+  border: 2px solid #777;
+  color: #777;
+  font-weight: 900;
+  font-size: 24px;
+  width: 46px;
+  height: 40px;
+  text-align: center;
+  line-height: 36px;
+  margin: 0 10px;
+}
+
+.arrowLeft:hover,
+.arrowRight:hover {
+  border-color: @green;
+  color: @green;
+}
+
+.newsSection {
+  margin-left: 1%;
+  font-family: 'Roboto';
+
+  .col {
+	display: block;
+	float:left;
+	margin: 1% 0 0 1.5%;
+  }
+
+  .col:first-child { margin-left: 0; }
+
+  .span_1_of_3 { width: 32.33%; }
+
+  .news {
+    background-color: #fff;
+    padding: 0 20px 20px;
+    box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.5);
+  }
+
+  .date {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: -30px;
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: 400;
+  }
+
 }
