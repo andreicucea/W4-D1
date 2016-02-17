@@ -419,8 +419,28 @@ body {
 
   .news {
     background-color: #fff;
-    padding: 0 20px 20px;
+    padding: 0 24px 55px;
     box-shadow: 1px 1px 15px 1px rgba(0,0,0,0.5);
+
+    h1 {
+      text-align: center;
+      color: @black;
+      font-size: 18px;
+      margin-top: 15px;
+    }
+
+    h2 {
+      text-align: center;
+      color: @grey;
+      font-weight: 400;
+    }
+
+    >div:nth-child(3) {
+      background-color: @black;
+      height: 2px;
+      width: 40%;
+      margin: 15px auto 25px;
+    }
   }
 
   .date {
@@ -435,4 +455,25 @@ body {
     font-weight: 400;
   }
 
+}
+
+.top5 {
+  background-color: @green;
+  text-align: left;
+  padding: 40px 30px;
+  font-family: 'Roboto';
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  >div:nth-child(3) {
+    background-color: @black;
+    height: 2px;
+  }
 }
