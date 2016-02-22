@@ -684,4 +684,110 @@ body {
       line-height: 26px;
     }
   }
+
+  .moreInfo {
+    padding: 0 0 50px;
+    border-bottom: 1px solid lighten(@black, 10%);
+
+    .updates,
+    .streams,
+    .contact {
+      font-family: 'Roboto';
+      padding: 50px 10px 0;
+
+      .spacer {
+        height: 1px;
+        width: 95%;
+        display: block;
+        background-color: lighten(@black, 10%);
+        margin: 8px 0;
+      }
+
+      .streamNames {
+
+        h2 {
+          font-size: 16px;
+          font-weight: 500;
+        }
+
+        >h2:nth-child(1)::before {
+          content: "asda";
+          color: rgba(0,0,0,0);
+          background-image: url(../images/clock1.png);
+          background-size: 18px 18px;
+          background-repeat: no-repeat;
+        }
+      }
+
+      >div:nth-child(2) {
+        display: block;
+        width: 25%;
+        height: 2px;
+        background-color: #434641;
+        margin: 16px 0 20px;
+      }
+
+      h1 {
+        color: #fff;
+        text-align: left;
+        font-weight: 400;
+        font-size: 17px;
+        letter-spacing: 1px;
+      }
+
+      h2 {
+        font-size: 14px;
+        font-weight: 400;
+        color: darken(@grey, 20%);
+        margin: 10px 0;
+      }
+
+      h3 {
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: 400;
+        color: lighten(@grey, 20%);
+        margin: 10px 0;
+
+        span {
+          color: @green;
+          padding-left: 20px;
+        }
+      }
+    }
+
+    .contact {
+      h2 {
+        font-size: 16px;
+        line-height: 32px;
+        margin: 30px 0;
+      }
+
+      h2:nth-child(5) {
+        font-size: 32px;
+        font-weight: 900;
+
+        span {
+          font-size: 18px;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+
+  .legal {
+    font-family: 'Roboto';
+    color: darken(@grey, 20%);
+    padding: 25px 0 100px;
+
+    h1 {
+      font-weight: 400;
+    }
+
+    >div:nth-child(2) {
+      h1 {
+        padding: 0 10px;
+      }
+    }
+  }
 }

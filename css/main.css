@@ -676,3 +676,102 @@ body {
   font-weight: 400;
   line-height: 26px;
 }
+.footer .moreInfo {
+  padding: 0 0 50px;
+  border-bottom: 1px solid #363636;
+}
+.footer .moreInfo .updates,
+.footer .moreInfo .streams,
+.footer .moreInfo .contact {
+  font-family: 'Roboto';
+  padding: 50px 10px 0;
+}
+.footer .moreInfo .updates .spacer,
+.footer .moreInfo .streams .spacer,
+.footer .moreInfo .contact .spacer {
+  height: 1px;
+  width: 95%;
+  display: block;
+  background-color: #363636;
+  margin: 8px 0;
+}
+.footer .moreInfo .updates .streamNames h2,
+.footer .moreInfo .streams .streamNames h2,
+.footer .moreInfo .contact .streamNames h2 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer .moreInfo .updates .streamNames > h2:nth-child(1)::before,
+.footer .moreInfo .streams .streamNames > h2:nth-child(1)::before,
+.footer .moreInfo .contact .streamNames > h2:nth-child(1)::before {
+  content: "asda";
+  color: rgba(0, 0, 0, 0);
+  background-image: url(../images/clock1.png);
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+}
+.footer .moreInfo .updates > div:nth-child(2),
+.footer .moreInfo .streams > div:nth-child(2),
+.footer .moreInfo .contact > div:nth-child(2) {
+  display: block;
+  width: 25%;
+  height: 2px;
+  background-color: #434641;
+  margin: 16px 0 20px;
+}
+.footer .moreInfo .updates h1,
+.footer .moreInfo .streams h1,
+.footer .moreInfo .contact h1 {
+  color: #fff;
+  text-align: left;
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.footer .moreInfo .updates h2,
+.footer .moreInfo .streams h2,
+.footer .moreInfo .contact h2 {
+  font-size: 14px;
+  font-weight: 400;
+  color: #4a4a4a;
+  margin: 10px 0;
+}
+.footer .moreInfo .updates h3,
+.footer .moreInfo .streams h3,
+.footer .moreInfo .contact h3 {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #b0b0b0;
+  margin: 10px 0;
+}
+.footer .moreInfo .updates h3 span,
+.footer .moreInfo .streams h3 span,
+.footer .moreInfo .contact h3 span {
+  color: #87bd65;
+  padding-left: 20px;
+}
+.footer .moreInfo .contact h2 {
+  font-size: 16px;
+  line-height: 32px;
+  margin: 30px 0;
+}
+.footer .moreInfo .contact h2:nth-child(5) {
+  font-size: 32px;
+  font-weight: 900;
+}
+.footer .moreInfo .contact h2:nth-child(5) span {
+  font-size: 18px;
+  vertical-align: top;
+}
+.footer .legal {
+  font-family: 'Roboto';
+  color: #4a4a4a;
+  padding: 25px 0 100px;
+}
+.footer .legal h1 {
+  font-weight: 400;
+}
+.footer .legal > div:nth-child(2) h1 {
+  padding: 0 10px;
+}
