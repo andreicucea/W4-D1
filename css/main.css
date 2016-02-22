@@ -322,7 +322,7 @@ body {
   font-weight: 900;
 }
 .description > div:nth-child(4):hover {
-  background-color: rgba(28, 28, 28, 0.3);
+  background-color: rgba(106, 94, 104, 0.3);
   cursor: pointer;
 }
 .content {
@@ -563,7 +563,7 @@ body {
   background-color: #fff;
   font-family: 'Roboto';
   text-align: center;
-  padding: 30px 60px;
+  padding: 30px 60px 40px;
   margin-bottom: 12px;
 }
 .quoteMain h1 {
@@ -606,4 +606,73 @@ body {
   color: #7d7d7d;
   content: "\201d";
   margin-top: 40px;
+}
+.footer {
+  background-color: #252625;
+}
+.footer .schedules {
+  background-color: #87bd65;
+  text-align: center;
+  position: relative;
+  font-family: 'Roboto';
+}
+.footer .schedules > div:nth-child(2) {
+  border-left: 1px solid #6da748;
+  border-right: 1px solid #6da748;
+}
+.footer .schedules .calendarIcon {
+  background-image: url(../images/calendar.png);
+  background-size: 30px auto;
+  height: 60px;
+  width: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+  background-color: #87bd65;
+  top: -30px;
+  border-radius: 50%;
+}
+.footer .schedules .twitchIcon {
+  background-image: url(../images/twitchIcon.png);
+  background-size: 30px auto;
+  height: 60px;
+  width: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+  background-color: #87bd65;
+  top: -30px;
+  border-radius: 50%;
+}
+.footer .schedules .facebookLike {
+  background-image: url(../images/fbLike.png);
+  background-size: 30px auto;
+  height: 60px;
+  width: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: relative;
+  background-color: #87bd65;
+  top: -30px;
+  border-radius: 50%;
+}
+.footer .schedules h1,
+.footer .schedules h2 {
+  position: relative;
+  top: -30px;
+}
+.footer .schedules h1 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 35px;
+}
+.footer .schedules h2 {
+  color: #292929;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
 }

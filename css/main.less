@@ -265,7 +265,7 @@ body {
   }
 
   >div:nth-child(4):hover {
-    background-color: rgba(28, 28, 28, 0.3);
+    background-color: rgba(106,94,104,0.3);
     cursor: pointer;
   }
 
@@ -558,7 +558,7 @@ body {
   background-color: #fff;
   font-family: 'Roboto';
   text-align: center;
-  padding: 30px 60px;
+  padding: 30px 60px 40px;
   margin-bottom: 12px;
 
   h1 {
@@ -607,4 +607,81 @@ body {
   color: @grey;
   content: "\201d";
   margin-top: 40px;
+}
+
+.footer {
+  background-color: #252625;
+
+  .schedules {
+    background-color: @green;
+    text-align: center;
+    position: relative;
+    font-family: 'Roboto';
+
+    >div:nth-child(2) {
+      border-left: 1px solid darken(@green, 10%);
+      border-right: 1px solid darken(@green, 10%);
+    }
+
+    .calendarIcon {
+      background-image: url(../images/calendar.png);
+      background-size: 30px auto;
+      height: 60px;
+      width: 60px;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      position: relative;
+      background-color: @green;
+      top: -30px;
+      border-radius: 50%;
+    }
+
+    .twitchIcon {
+      background-image: url(../images/twitchIcon.png);
+      background-size: 30px auto;
+      height: 60px;
+      width: 60px;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      position: relative;
+      background-color: @green;
+      top: -30px;
+      border-radius: 50%;
+    }
+
+    .facebookLike {
+      background-image: url(../images/fbLike.png);
+      background-size: 30px auto;
+      height: 60px;
+      width: 60px;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0 auto;
+      position: relative;
+      background-color: @green;
+      top: -30px;
+      border-radius: 50%;
+    }
+
+    h1, h2 {
+      position: relative;
+      top: -30px;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 35px;
+    }
+
+    h2 {
+      color: lighten(@black, 5%);
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 26px;
+    }
+  }
 }
