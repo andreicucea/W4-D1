@@ -101,11 +101,6 @@ a:hover {
 a:active {
   text-decoration: none;
 }
-html,
-body {
-  height: 100%;
-  max-height: 100%;
-}
 .col-1 {
   float: left;
   width: 8.33%;
@@ -437,19 +432,20 @@ body {
   color: #87bd65;
 }
 .newsSection {
-  margin-left: 1%;
   font-family: 'Roboto';
+  position: relative;
+}
+.newsSection .section {
+  display: flex;
+  flex-wrap: wrap-reverse;
 }
 .newsSection .col {
   display: block;
   float: left;
-  margin: 1% 0 0 1.5%;
-}
-.newsSection .col:first-child {
-  margin-left: 0;
+  margin: 1.5% 0 0 1.5%;
 }
 .newsSection .span_1_of_3 {
-  width: 32.33%;
+  width: 31.8333%;
 }
 .newsSection .news {
   background-color: #fff;
@@ -774,4 +770,8 @@ body {
 }
 .footer .legal > div:nth-child(2) h1 {
   padding: 0 10px;
+}
+#create {
+  position: absolute;
+  top: -30px;
 }
