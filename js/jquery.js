@@ -2,6 +2,17 @@ $(document).ready(function() {
   $("#create").on("click", function() {
       create();
   });
+
+  $(".selectTarget").on('click', function() {
+// working with the parrent
+    $(".selectTarget").removeClass("active");
+    $(this).addClass("active");
+// working with the first child
+    $(".selectTarget div:first-child").addClass("inactive");
+    $(".selectTarget div:first-child").removeClass("active");
+    $(this).find("div:first-child").removeClass("inactive");
+    $(this).find("div:first-child").addClass("active");
+  });
 });
 
 

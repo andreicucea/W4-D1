@@ -90,6 +90,14 @@ a:active {text-decoration: none;}
 @grey: #7d7d7d;
 @green: #87BD65;
 
+.active {
+  background-color: lighten(@green, 10%);
+}
+
+.inactive {
+  background-color: @green;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -638,7 +646,7 @@ a:active {text-decoration: none;}
       background-repeat: no-repeat;
       margin: 0 auto;
       position: relative;
-      background-color: @green;
+      // background-color: @green;
       top: -30px;
       border-radius: 50%;
     }
@@ -652,7 +660,7 @@ a:active {text-decoration: none;}
       background-repeat: no-repeat;
       margin: 0 auto;
       position: relative;
-      background-color: @green;
+      // background-color: @green;
       top: -30px;
       border-radius: 50%;
     }
@@ -666,7 +674,7 @@ a:active {text-decoration: none;}
       background-repeat: no-repeat;
       margin: 0 auto;
       position: relative;
-      background-color: @green;
+      // background-color: @green;
       top: -30px;
       border-radius: 50%;
     }
@@ -797,8 +805,16 @@ a:active {text-decoration: none;}
     }
   }
 }
-
+// -------------------jQuery-----------------------------------------------------------------
 #create {
   position: absolute;
   top: -30px;
+}
+
+.active {
+  background-color: lighten(@green, 10%);
+}
+
+.inactive {
+  background-color: @green;
 }

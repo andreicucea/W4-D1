@@ -171,6 +171,12 @@ a:active {
 .row:after {
   clear: both;
 }
+.active {
+  background-color: #a3cc89;
+}
+.inactive {
+  background-color: #87bd65;
+}
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -625,7 +631,6 @@ a:active {
   background-repeat: no-repeat;
   margin: 0 auto;
   position: relative;
-  background-color: #87bd65;
   top: -30px;
   border-radius: 50%;
 }
@@ -638,7 +643,6 @@ a:active {
   background-repeat: no-repeat;
   margin: 0 auto;
   position: relative;
-  background-color: #87bd65;
   top: -30px;
   border-radius: 50%;
 }
@@ -651,7 +655,6 @@ a:active {
   background-repeat: no-repeat;
   margin: 0 auto;
   position: relative;
-  background-color: #87bd65;
   top: -30px;
   border-radius: 50%;
 }
@@ -774,4 +777,10 @@ a:active {
 #create {
   position: absolute;
   top: -30px;
+}
+.active {
+  background-color: #a3cc89;
+}
+.inactive {
+  background-color: #87bd65;
 }
