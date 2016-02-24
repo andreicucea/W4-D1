@@ -19,6 +19,12 @@ $(document).ready(function() {
     slide1();
     slide3();
   });
+
+  window.setInterval(function(){
+    slide1();
+    slide3();
+  }, 5000);
+
 });
 
 
@@ -30,7 +36,7 @@ function create() {
   };
 };
 
-// this function takes it's values from hidden display elements
+// this function takes it's values from hidden HTML elements
 function slide1() {
   var text = $("#slide1").text();
   console.log(text);
@@ -42,6 +48,7 @@ function slide1() {
     $("#slide1").text($("#slide1a").text());
   };
 };
+
 
 function slide3() {
   var text = $("#slide3").html();
