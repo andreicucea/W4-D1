@@ -33,12 +33,12 @@ function create() {
 function slide1() {
   var text = $("#slide1").text();
   console.log(text);
-  if        (text === "LEARN MORE") {
-    $("#slide1").text("LEARN LESS");
-  } else if (text === "LEARN LESS") {
-    $("#slide1").text("LEARN SOMETHING");
-  } else if (text === "LEARN SOMETHING") {
-    $("#slide1").text("LEARN MORE");
+  if        (text === $("#slide1a").text()) {
+    $("#slide1").text($("#slide1b").text());
+  } else if (text === $("#slide1b").text()) {
+    $("#slide1").text($("#slide1c").text());
+  } else if (text === $("#slide1c").text()) {
+    $("#slide1").text($("#slide1a").text());
   };
 };
 
