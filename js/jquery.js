@@ -30,6 +30,7 @@ function create() {
   };
 };
 
+// this function takes it's values from hidden display elements
 function slide1() {
   var text = $("#slide1").text();
   console.log(text);
