@@ -41,11 +41,11 @@ a:hover {text-decoration: none;}
 
 a:active {text-decoration: none;}
 
-html,
-body {
-  height: 100%;
-  max-height: 100%;
-}
+// html,
+// body {
+//   height: 100%;
+//   max-height: 100%;
+// }
 
 .col-1 {float: left; width: 8.33%;}
 .col-2 {float: left; width: 16.66%;}
@@ -89,6 +89,14 @@ body {
 @black: #1c1c1c;
 @grey: #7d7d7d;
 @green: #87BD65;
+
+.active {
+  background-color: lighten(@green, 10%);
+}
+
+.inactive {
+  background-color: @green;
+}
 
 .container {
   max-width: 1170px;
@@ -412,18 +420,24 @@ body {
 }
 
 .newsSection {
-  margin-left: 1%;
+  // margin-left: 1%;
   font-family: 'Roboto';
+  position: relative;
+
+  .section {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
 
   .col {
 	display: block;
 	float:left;
-	margin: 1% 0 0 1.5%;
+	margin: 1.5% 0 0 1.5%;
   }
 
-  .col:first-child { margin-left: 0; }
+  // .col:first-child { margin-left: 0; }
 
-  .span_1_of_3 { width: 32.33%; }
+  .span_1_of_3 { width: 31.8333%; }
 
   .news {
     background-color: #fff;
@@ -632,7 +646,7 @@ body {
       background-repeat: no-repeat;
       margin: 0 auto;
       position: relative;
-      background-color: @green;
+      // background-color: @green;
       top: -30px;
       border-radius: 50%;
     }
@@ -646,7 +660,7 @@ body {
       background-repeat: no-repeat;
       margin: 0 auto;
       position: relative;
-      background-color: @green;
+      // background-color: @green;
       top: -30px;
       border-radius: 50%;
     }
@@ -660,7 +674,7 @@ body {
       background-repeat: no-repeat;
       margin: 0 auto;
       position: relative;
-      background-color: @green;
+      // background-color: @green;
       top: -30px;
       border-radius: 50%;
     }
@@ -791,3 +805,12 @@ body {
     }
   }
 }
+// -------------------jQuery-----------------------------------------------------------------
+#create {
+  position: absolute;
+  top: -30px;
+}
+
+.active {background-color: lighten(@green, 10%);}
+
+.inactive {background-color: @green;}
